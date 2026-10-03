@@ -8,3 +8,7 @@ Traditional model:
 
 ```text
 weights -> loss -> update -> repeat -> train
+
+TAI
+```text 
+input -> topology signature -> compare to frozen prototypes -> freeze -> predict
