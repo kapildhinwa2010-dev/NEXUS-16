@@ -195,9 +195,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ```bibtex
 @software{nexus16_2024,
-  author = {Your Name},
+  author = {kapil dhinwa},
   title = {NEXUS-16: Wave-Native Byte-Level AI},
-  year = {2024},
+  year = {2026},
   url = {https://github.com/YOUR_USERNAME/nexus16},
   version = {1.0}
 }
