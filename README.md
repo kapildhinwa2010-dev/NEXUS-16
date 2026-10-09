@@ -1,6 +1,7 @@
 <div align="center">
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU)
+
 </div>
 ![Base Accuracy](https://img.shields.io/badge/Base_Accuracy-75%25-orange)
 ![Enhanced Accuracy](https://img.shields.io/badge/Enhanced_Accuracy-95%25-green)
@@ -206,19 +207,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Built with ❤️ and 🌊 waves**
 
 </div>
-
-## 📥 Download Model
-
-| Model | Size | Download |
-|-------|------|----------|
-| NEXUS-16 (100M tokens) | 7.5 MB | [Download from Google Drive](https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk) |
-
-### How to Use
-1. Download the `.pt` file from the link above
-2. Place it in the `models/` folder
-3. Rename it to `nexus16_v15_100m.pt`
-4. Run the examples!
-## 📥 Download Models
 
 NEXUS-16 comes in two configurations:
 
