@@ -314,6 +314,21 @@ pip install -r requirements.txt
 - 🌊 **16 frameworks** integrated into one architecture
 
 ---
+## 🧪 Semantic Head Experiments
+
+We tested 3 different semantic head architectures to enhance the base model:
+
+| Head | Architecture | Training Data | Loss Function | Accuracy | vs Base |
+|------|--------------|---------------|---------------|----------|---------|
+| Base Model (100M) | None | 100M tokens | VICReg | **75%** | - |
+| V12 Simple | 1-layer MLP | 16 pairs | InfoNCE | 71% | -4% |
+| V13 Ultimate | 3-layer MLP + LayerNorm | 3000 stories | InfoNCE | 50% | -25% |
+| V14 Triplet | 3-layer MLP + LayerNorm | 3000 stories | Triplet Margin | 40% | -35% |
+
+### Key Finding
+**The 100M token base model already achieves strong semantic understanding without any external heads.** This is a significant result for byte-level models, which typically struggle with representation collapse.
+
+The semantic heads were trained on limited data (16-3000 examples) and couldn't match the base model's performance from 100M token training.
 
 ## 💡 Why Colab Instead of GitHub Files?
 
