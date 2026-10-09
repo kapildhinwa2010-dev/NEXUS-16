@@ -210,3 +210,15 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Built with ❤️ and 🌊 waves**
 
 </div>
+
+## 📥 Download Model
+
+| Model | Size | Download |
+|-------|------|----------|
+| NEXUS-16 (100M tokens) | 7.5 MB | [Download from Google Drive](https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk) |
+
+### How to Use
+1. Download the `.pt` file from the link above
+2. Place it in the `models/` folder
+3. Rename it to `nexus16_v15_100m.pt`
+4. Run the examples!
