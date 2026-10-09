@@ -1,3 +1,5 @@
+![Base Accuracy](https://img.shields.io/badge/Base_Accuracy-75%25-orange)
+![Enhanced Accuracy](https://img.shields.io/badge/Enhanced_Accuracy-95%25-green)
 <div align="center">
 
 # 🌊 NEXUS-16
@@ -174,16 +176,6 @@ This project went through **15 iterations** (V1-V15) to solve fundamental AI cha
 - **Plagiarism Detection** - Catch paraphrased content
 - **Edge Device AI** - Deploy on mobile/IoT (430MB)
 
----
-
-## 📦 Model Zoo
-
-| Model | Params | Tokens | Accuracy | Download |
-|-------|--------|--------|----------|----------|
-| `nexus16_v15_100m` | 1.96M | 100M | 75% | [Download](models/nexus16_v15_100m.pt) |
-| `nexus16_semantic_head` | 0.5M | - | +20% | [Download](models/semantic_head.pt) |
-
----
 
 ## 📄 License
 
@@ -222,3 +214,42 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 2. Place it in the `models/` folder
 3. Rename it to `nexus16_v15_100m.pt`
 4. Run the examples!
+## 📥 Download Models
+
+NEXUS-16 comes in two configurations:
+
+| Model | Purpose | Accuracy | Size | Download |
+|-------|---------|----------|------|----------|
+| **Base Model** | Fast encoding, no extra dependencies | 75% | 7.5 MB | [Download](https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk) |
+| **Base + Semantic Head** | Maximum semantic accuracy | **95%** | 8.0 MB | [Download Head](https://drive.google.com/file/d/14U0ImksZ02CjrE6P8RUt4kNSeXPdPd16/view?usp=drivesdk) |
+
+### Setup Instructions
+
+**Option 1: Base Model Only (Quick Start)**
+```bash
+# Download base model
+wget "https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk" -O models/nexus16_v15_100m.pt
+
+# Use it
+python examples/semantic_similarity.py
+```
+
+**Option 2: Base + Semantic Head (Maximum Accuracy)**
+```bash
+# Download both files
+wget "https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk" -O models/nexus16_v15_100m.pt
+wget "https://drive.google.com/file/d/14U0ImksZ02CjrE6P8RUt4kNSeXPdPd16/view?usp=drivesdk" -O models/semantic_head.pt
+
+# Use enhanced model (95% accuracy)
+python examples/semantic_similarity_enhanced.py
+```
+
+---
+
+## 🚀 Performance Comparison
+
+| Configuration | Semantic Accuracy | Speed | Use Case |
+|---------------|-------------------|-------|----------|
+| **Base Model Only** | 75% | 956K tok/s | Fast applications, edge devices |
+| **Base + Semantic Head** | **95%** | 900K tok/s | Production, high-accuracy tasks |
+| **Difference** | **+20%** | -6% | Worth it for most applications! |
