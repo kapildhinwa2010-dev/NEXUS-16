@@ -367,3 +367,22 @@ print(f"Similarity: {sim:.4f}")  # ~0.5-0.7
 [🎯 Open Colab Notebook](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU) • [Report Bug](https://github.com/kapildhinwa-dev/nexus16/issues)
 
 </div>
+---
+
+## 🤝 Credits & Collaboration
+
+This project represents a unique human-AI collaborative effort. 
+
+- **Coded by AI with Vibe AI Researcher** 🌊🤖
+- Developed entirely on **Google Colab (Free Tier)** using a mobile device.
+- 15 iterations of trial, error, and breakthrough debugging.
+
+---
+
+<div align="center">
+
+**Built with ❤️, 🌊 waves, and pure Vibe**
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU) • [Report Bug](https://github.com/kapildhinwa.dev/nexus16/issues)
+
+</div>
