@@ -257,3 +257,125 @@ python examples/semantic_similarity_enhanced.py
 | **Base Model Only** | 75% | 956K tok/s | Fast applications, edge devices |
 | **Base + Semantic Head** | **95%** | 900K tok/s | Production, high-accuracy tasks |
 | **Difference** | **+20%** | -6% | Worth it for most applications! |
+
+# 🌊 NEXUS-16: Wave-Native Byte-Level AI
+
+<div align="center">
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU)
+
+**🚀 Try it yourself - Click the button above!**
+
+</div>
+
+---
+
+## 📖 Complete Journey (Colab Notebook)
+
+The entire development journey from V1 to V15 is documented in an interactive Colab notebook:
+
+**[🎯 Open NEXUS-16 Complete notebook](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU)**
+
+### What's Inside:
+- ✅ **15 Iterations** of architecture development
+- ✅ **100M Token Training** with live logs
+- ✅ **Benchmark Results** (Speed, Memory, Accuracy)
+- ✅ **1-Second Burst Test** (13K sentences/sec)
+- ✅ **Semantic Head Experiments** (V12, V13, V14)
+- ✅ **Interactive Demos** (Search, Clustering, Similarity)
+- ✅ **All Model Weights** saved to Google Drive
+
+### How to Use:
+1. Click the Colab link above
+2. Runtime → Run all (ya specific cells run karo)
+3. Models automatically save to your Google Drive
+4. Experiment with the code!
+
+---
+
+## 🎯 Quick Start (For Those Who Want Code Only)
+
+If you just want the production-ready code without the training journey:
+
+```bash
+git clone https://github.com/kapildhinwa-dev/nexus16.git
+cd nexus16
+pip install -r requirements.txt
+```
+
+---
+
+## 📊 Project Timeline
+
+| Phase | Versions | Focus | Result |
+|-------|----------|-------|--------|
+| **Architecture** | V1-V8 | Fix bugs, design frameworks | Working model |
+| **Anti-Collapse** | V9-V10 | VICReg discovery | Solved collapse |
+| **Optimization** | V11 | Remove dead layers | 2x faster |
+| **Semantic Heads** | V12-V14 | External enhancement | 71% accuracy |
+| **100M Mega Run** | V15 | Base model mastery | **75% accuracy** |
+
+---
+
+## 🏆 Key Achievements
+
+- ⚡ **956K tokens/sec** on T4 GPU
+- 🧠 **75% semantic accuracy** (base model, no external heads)
+- 💾 **1.96M parameters** (ultra-lightweight)
+- 🛡️ **No collapse** (VICReg + Attention Pooling)
+- 🌊 **16 frameworks** integrated into one architecture
+
+---
+
+## 💡 Why Colab Instead of GitHub Files?
+
+This project was built entirely on **Google Colab (Free Tier)** using just a phone. The Colab notebook contains:
+
+- **Live training logs** with real-time metrics
+- **Interactive experiments** you can modify and run
+- **Model weights** automatically saved to Drive
+- **Complete debugging journey** (15 iterations)
+- **Benchmark visualizations**
+
+Sharing the Colab link gives you the **full, reproducible experience** rather than just static code files.
+
+---
+
+## 🚀 Run Examples
+
+### Semantic Similarity
+```python
+# In Colab, after training:
+sim = model.similarity("The cat sleeps", "A kitten rests")
+print(f"Similarity: {sim:.4f}")  # ~0.5-0.7
+```
+
+### 1-Second Burst Test
+```python
+# See how many sentences NEXUS-16 can process in 1 second
+# (Spoiler: 13,000+ sentences!)
+```
+
+---
+
+## 📚 Citation
+
+```bibtex
+@software{nexus16_2026,
+  author = {kapil dhinwa},
+  title = {NEXUS-16: Wave-Native Byte-Level AI},
+  year = {2026},
+  url = {https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU},
+  version = {0.15}
+}
+```
+
+---
+
+<div align="center">
+
+**Built with ❤️ on Google Colab **
+
+[🎯 Open Colab Notebook](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU) • [Report Bug](https://github.com/kapildhinwa-dev/nexus16/issues)
+
+</div>
