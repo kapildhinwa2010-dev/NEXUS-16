@@ -79,7 +79,7 @@ We solved **representation collapse** in byte-level models using a novel combina
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/nexus16.git
+git clone https://github.com/kapildhinwa-dev/nexus16.git
 cd nexus16
 
 # Install dependencies
