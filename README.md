@@ -92,6 +92,7 @@ We tested 3 different semantic head architectures to enhance the base model:
 
 ### Key Finding
 **The 100M token base model already achieves strong semantic understanding without any external heads.** This is a significant result for byte-level models, which typically struggle with representation collapse. The semantic heads were trained on limited data (16–3000 examples) and could not match the base model.
+for quick start there are 2 modles for download scroll down 
 
 ---
 
@@ -212,6 +213,7 @@ NEXUS-16 comes in two configurations:
 |-------|---------|----------|------|----------|
 | **Base Model** | Fast encoding, no extra dependencies | 75% | 7.5 MB | [Download](https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk) |
 | **Base + Semantic Head** | Maximum semantic accuracy | **95%** | 8.0 MB | [Download Head](https://drive.google.com/file/d/14U0ImksZ02CjrE6P8RUt4kNSeXPdPd16/view?usp=drivesdk) |
+scroll 
 
 ### Setup Instructions
 
