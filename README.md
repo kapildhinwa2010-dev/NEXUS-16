@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1zw7atJJNiDAbwWKSbk2g4bRWbSGtvRUU)
 
-</div>
+</div aling="center">
 ![Base Accuracy](https://img.shields.io/badge/Base_Accuracy-75%25-orange)
 ![Enhanced Accuracy](https://img.shields.io/badge/Enhanced_Accuracy-95%25-green)
 <div align="center">
