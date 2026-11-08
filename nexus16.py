@@ -139,14 +139,10 @@ class NEXUS16(nn.Module):
 
         if not os.path.exists(path):
             raise FileNotFoundError(
-                "Checkpoint not found: " + str(path) + "
-"
-                "Download it first (see README 'Model Downloads'):
-"
-                "  pip install gdown
-"
-                "  gdown 1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal -O models/nexus16_v15_100m.pt
-"
+                "Checkpoint not found: " + str(path) + "\n"
+                "Download it first (see README 'Model Downloads'):\n"
+                "  pip install gdown\n"
+                "  gdown 1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal -O models/nexus16_v15_100m.pt\n"
                 "Or run without a checkpoint: NEXUS16() - see examples/quickstart_no_checkpoint.py"
             )
         model = cls()
