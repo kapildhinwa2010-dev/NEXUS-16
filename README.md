@@ -219,14 +219,18 @@ scroll
 
 **Option 1: Base Model Only (Quick Start)**
 ```bash
-wget "https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk" -O models/nexus16_v15_100m.pt
+mkdir -p models
+pip install gdown
+gdown 1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal -O models/nexus16_v15_100m.pt
 python examples/semantic_similarity.py
 ```
 
 **Option 2: Base + Semantic Head (Maximum Accuracy)**
 ```bash
-wget "https://drive.google.com/file/d/1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal/view?usp=drivesdk" -O models/nexus16_v15_100m.pt
-wget "https://drive.google.com/file/d/14U0ImksZ02CjrE6P8RUt4kNSeXPdPd16/view?usp=drivesdk" -O models/semantic_head.pt
+mkdir -p models
+pip install gdown
+gdown 1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal -O models/nexus16_v15_100m.pt
+gdown 14U0ImksZ02CjrE6P8RUt4kNSeXPdPd16 -O models/semantic_head.pt
 python examples/semantic_similarity_enhanced.py
 ```
 

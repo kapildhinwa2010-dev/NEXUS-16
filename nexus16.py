@@ -2,7 +2,7 @@
 NEXUS-16: Wave-Native Byte-Level AI
 The world's fastest semantic encoder.
 
-Author: Your Name
+Author: Kapil Dhinwa
 License: MIT
 """
 
@@ -134,7 +134,21 @@ class NEXUS16(nn.Module):
     
     @classmethod
     def from_pretrained(cls, path):
-        """Load pretrained model"""
+        """Load pretrained model (clear error if the checkpoint is missing)"""
+        import os
+
+        if not os.path.exists(path):
+            raise FileNotFoundError(
+                "Checkpoint not found: " + str(path) + "
+"
+                "Download it first (see README 'Model Downloads'):
+"
+                "  pip install gdown
+"
+                "  gdown 1By3Eub3EyLUfpnGwVvLXyDBtcCORcdal -O models/nexus16_v15_100m.pt
+"
+                "Or run without a checkpoint: NEXUS16() - see examples/quickstart_no_checkpoint.py"
+            )
         model = cls()
         state_dict = torch.load(path, map_location="cpu")
         model.load_state_dict(state_dict)
