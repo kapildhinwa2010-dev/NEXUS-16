@@ -1,4 +1,3 @@
-Traceback (most recent call last):
-  File "/home/runner/work/NEXUS-16/NEXUS-16/examples/quickstart_no_checkpoint.py", line 7, in <module>
-    from nexus16 import NEXUS16
-ModuleNotFoundError: No module named 'nexus16'
+Embedding shape: (256,)
+Similarity (random init, untrained): 0.8827
+Note: for real semantic quality, download the pretrained checkpoint (README).
