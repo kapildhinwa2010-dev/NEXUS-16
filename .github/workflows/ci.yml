@@ -9,6 +9,9 @@ concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -25,6 +28,20 @@ jobs:
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install -r requirements.txt pytest
       - name: Smoke tests (no checkpoint needed)
-        run: python -m pytest tests/ -q
+        run: |
+          mkdir -p ci_logs
+          python -m pytest tests/ -q --tb=short 2>&1 | tee ci_logs/pytest.log
+          test ${PIPESTATUS[0]} -eq 0
       - name: Quickstart example runs without checkpoint
-        run: python examples/quickstart_no_checkpoint.py
+        run: |
+          python examples/quickstart_no_checkpoint.py 2>&1 | tee ci_logs/quickstart.log
+          test ${PIPESTATUS[0]} -eq 0
+      - name: Commit CI logs (hamesha, taaki fail ka reason repo me mile)
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ci_logs/ || echo "no logs"
+          git commit -m "ci: run logs (auto) [skip ci]" || echo "nothing to commit"
+          git pull --rebase origin main || true
+          git push
