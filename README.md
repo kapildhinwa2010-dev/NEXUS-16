@@ -11,6 +11,7 @@
 ![Accuracy](https://img.shields.io/badge/Accuracy-75%25-orange)
 ![Memory](https://img.shields.io/badge/Memory-430MB-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
+[![CI](https://github.com/kapildhinwa2010-dev/NEXUS-16/actions/workflows/ci.yml/badge.svg)](https://github.com/kapildhinwa2010-dev/NEXUS-16/actions/workflows/ci.yml)
 
 **No Tokenizer. No Transformer. Pure Byte-Level Understanding.**
 
@@ -93,6 +94,16 @@ We tested 3 different semantic head architectures to enhance the base model:
 ### Key Finding
 **The 100M token base model already achieves strong semantic understanding without any external heads.** This is a significant result for byte-level models, which typically struggle with representation collapse. The semantic heads were trained on limited data (16–3000 examples) and could not match the base model.
 for quick start there are 2 modles for download scroll down 
+
+---
+
+## ✅ CI Verification (Honest Note)
+
+Har push pe GitHub Actions verify karta hai:
+- **Smoke tests** (no checkpoint needed): architecture build, deterministic embeddings, batch forward
+- **Quickstart** no-checkpoint path: `examples/quickstart_no_checkpoint.py`
+
+Benchmarks table ke numbers (speed/accuracy) **author ke T4 Colab runs** se hain - CI functional correctness verify karta hai, benchmark numbers ko independently re-verify nahi.
 
 ---
 

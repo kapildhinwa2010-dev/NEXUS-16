@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nexus-16"
+version = "0.1.0"
+description = "NEXUS-16: wave-native byte-level AI semantic encoder"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Kapil Dhinwa" }]
+keywords = ["byte-level", "wave-native", "mamba", "semantic-encoder", "research"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Science/Research",
+]
+dependencies = ["torch>=2.0.0", "numpy>=1.24.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools]
+py-modules = ["nexus16"]

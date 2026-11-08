@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Dhinwa
+    given-names: Kapil
+title: "NEXUS-16: wave-native byte-level AI semantic encoder"
+version: 0.1.0
+date-released: "2026-11-08"
+url: "https://github.com/kapildhinwa2010-dev/NEXUS-16"
+repository-code: "https://github.com/kapildhinwa2010-dev/NEXUS-16"
+license: MIT

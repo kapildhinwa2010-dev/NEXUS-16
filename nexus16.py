@@ -6,6 +6,8 @@ Author: Kapil Dhinwa
 License: MIT
 """
 
+__version__ = "0.1.0"
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
