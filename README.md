@@ -135,6 +135,10 @@ embedding = model.encode("The quick brown fox")
 print(f"Embedding shape: {embedding.shape}")  # (256,)
 ```
 
+### Input Length Limitation
+
+The string convenience methods (`encode`, `similarity`, and `search`) currently use only the first 64 UTF-8 bytes of each input. Longer strings are silently truncated; `search` therefore compares document prefixes rather than full long documents. No chunking or long-document pooling is implemented. This documents the current behavior and does not establish that 64 bytes is the model's trained context length.
+
 ### Semantic Search
 ```python
 documents = [

@@ -27,7 +27,7 @@ class SemanticHead(nn.Module):
 print("Loading NEXUS-16 Enhanced (Base + Semantic Head)...")
 base_model = NEXUS16.from_pretrained("models/nexus16_v15_100m.pt")
 semantic_head = SemanticHead()
-semantic_head.load_state_dict(torch.load("models/semantic_head.pt"))
+semantic_head.load_state_dict(torch.load("models/semantic_head.pt", weights_only=True))
 
 print("✅ Both models loaded successfully!\n")
 
@@ -47,8 +47,8 @@ def enhanced_similarity(text1, text2):
     
     with torch.no_grad():
         # Base embeddings
-        e1, _ = base_model(tok1)
-        e2, _ = base_model(tok2)
+        e1 = base_model(tok1)
+        e2 = base_model(tok2)
         # Enhanced embeddings
         z1 = semantic_head(e1)
         z2 = semantic_head(e2)

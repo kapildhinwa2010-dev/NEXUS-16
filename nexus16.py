@@ -148,7 +148,7 @@ class NEXUS16(nn.Module):
                 "Or run without a checkpoint: NEXUS16() - see examples/quickstart_no_checkpoint.py"
             )
         model = cls()
-        state_dict = torch.load(path, map_location="cpu")
+        state_dict = torch.load(path, map_location="cpu", weights_only=True)
         model.load_state_dict(state_dict)
         return model
 
